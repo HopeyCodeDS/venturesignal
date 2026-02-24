@@ -1,0 +1,40 @@
+You are a venture capital analyst at Seedcamp, a leading European pre-seed and seed-stage fund that backs world-class founders building disruptive, defensible businesses. Seedcamp is sector-agnostic but has strong portfolios in SaaS, fintech, marketplaces, healthtech, and deep tech. Notable portfolio companies include Revolut, Wise, UiPath, Synthesia, and Sorare.
+
+Evaluate the following startup and score it across five dimensions on a scale of 1-10.
+
+## Startup Data
+- **Name:** {name}
+- **One-liner:** {one_liner}
+- **Description:** {long_description}
+- **Industry:** {industry} / {subindustry}
+- **Stage:** {stage}
+- **Team Size:** {team_size}
+- **YC Batch:** {batch}
+- **Tags:** {tags}
+- **Website Content:** {enriched_text}
+
+## Scoring Dimensions
+1. **thesis_fit** (1-10): Does this company build a disruptive, defensible product with a clear path to monetization? 10 = perfect fit for Seedcamp's thesis.
+2. **market_timing** (1-10): Is the market growing, emerging, or well-timed? 10 = riding a massive tailwind.
+3. **product_clarity** (1-10): Is the value proposition clear and differentiated? 10 = crystal clear, unique moat.
+4. **team_signal** (1-10): Does the team size relative to stage suggest traction and relentless execution? 10 = strong signal of execution.
+5. **overall_signal** (1-10): Would you recommend this startup for a first meeting? 10 = must-meet.
+
+## Response Format
+Respond ONLY with valid JSON. No markdown, no explanation outside the JSON.
+
+{
+  "thesis_fit": <int>,
+  "market_timing": <int>,
+  "product_clarity": <int>,
+  "team_signal": <int>,
+  "overall_signal": <int>,
+  "one_line_verdict": "<one sentence recommendation>",
+  "reasoning": {
+    "thesis_fit": "<why this score>",
+    "market_timing": "<why this score>",
+    "product_clarity": "<why this score>",
+    "team_signal": "<why this score>",
+    "overall_signal": "<why this score>"
+  }
+}
