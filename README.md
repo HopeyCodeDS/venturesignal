@@ -4,6 +4,8 @@ AI-powered B2B SaaS startup screener built for venture capital deal-sourcing.
 
 VentureSignal ingests ~2,300 B2B startups from the YC-OSS API, enriches them by scraping company websites, scores each one via Claude AI against a configurable VC investment thesis, and surfaces results through an interactive React dashboard.
 
+![VentureSignal Dashboard](frontend/public/venture-signal.png)
+
 ## Tech Stack
 
 | Layer | Technology |
@@ -55,7 +57,7 @@ Open http://localhost:5173 to view the dashboard.
 docker compose up --build
 ```
 
-- Backend: http://localhost:8000 (API docs at `/docs`)
+- Backend: http://localhost:8000 (API docs at `/docs`) 
 - Frontend: http://localhost:3000
 
 ## API Endpoints
